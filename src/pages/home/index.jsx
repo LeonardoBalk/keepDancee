@@ -3,7 +3,7 @@ import logohome from '../../assets/logo.png';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import like from '../../assets/córacao_cheio.png';
+import like from '../../assets/coracao_cheio.png';
 import deslike from '../../assets/coracao_vazio.png';
 
 function Home({ setLogado }) {
