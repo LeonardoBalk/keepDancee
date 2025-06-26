@@ -3,6 +3,8 @@ import logohome from '../../assets/logo.png';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import like from '../../assets/córacao_cheio.png';
+import deslike from
 
 function Home({ setLogado }) {
   const navigate = useNavigate();
@@ -173,9 +175,9 @@ function Home({ setLogado }) {
                       onClick={() => handleCurtir(link)}
                     >
                       {link.curtido ? (
-                        <img src="/src/assets/coracao_cheio.png" alt="Curtido" className='coracao_cheio' />
+                        <img src={like} alt="Curtido" className='coracao_cheio' />
                       ) : (
-                        <img src="/src/assets/coracao_vazio.png" alt="Não curtido" className='coracao_vazio' />
+                        <img src={deslike} alt="Não curtido" className='coracao_vazio' />
                       )}
                     </button>
                     <p><strong>Adicionado por:</strong> {link.usuario?.nomeUsuario || 'Desconhecido'}</p>
